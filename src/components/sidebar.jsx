@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../logo.svg';
+import './styles.css';
 import { SidebarButton } from './sidebarButton';
 import { MdSpaceDashboard } from 'react-icons/md';
 import { FaGripfire } from 'react-icons/fa';
@@ -10,7 +11,7 @@ import { FaSignOutAlt } from 'react-icons/fa';
 
 export const Sidebar = () => {
   return (
-    <div className='side-bar-container'>
+    <div className='sidebar-container'>
       <img src={logo} alt='logo' width='150px' height='150px' />
       <div>
         <SidebarButton title='Feed' to='/feed' icon={<MdSpaceDashboard />} />
